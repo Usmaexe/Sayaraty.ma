@@ -11,7 +11,7 @@
       ';
     }
   ?>
-  <UL class="Nav">
+  <UL class="Naaav">
   <?PHP
     if(isset($_SESSION["login"])){
       echo '
