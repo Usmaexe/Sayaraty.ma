@@ -1,0 +1,237 @@
+input{
+  border:none;
+  border-radius: 3px;
+  border-bottom: solid 1px #4e4e4e;
+  outline:none;
+  font-size:16px;
+  padding:10px;
+}
+textarea{
+  padding: 5px;
+  border-radius: 10px;
+  font-size:16px;
+  outline:none;
+}
+.Title{
+  text-transform: uppercase;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  clear:none;
+}
+h1{
+  position: relative;
+  margin-bottom:14px;
+}
+h1::before{
+  content: '';
+  position: absolute;
+  left: 3px;
+  bottom: -7px;
+  height: 5px;
+  background-color: rgb(255, 181, 46);
+  box-sizing: border-box;
+  width: 99%;
+}
+.TheHeader{
+  height: 60px;
+  font:700 50px 'Poppins';
+  justify-content: center;
+}
+.Sentence{
+  width: 400px;
+  text-align: center;
+  font:400 15px 'Poppins';
+}
+.Container{
+  width:80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  margin :50px auto;
+  box-shadow:0px 0px 30px 0px rgba(0,0,0,.1),0px 0px 5px 2px rgba(0,0,0,.1);
+}
+.rightContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #003fbd;
+  flex-basis: 40%;
+}
+.leftContainer{
+  display:flex;
+  margin:40px 0;
+  font:500 16px 'Roboto';
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 60%;
+}
+.formulaire{
+  display:flex;
+  flex-basis: 90%;
+  margin:0 auto;
+  gap:2em;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.formulaire label{
+  font-size: 20px;
+  display:block;
+}
+.nom_email{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:1em;
+}
+.block{
+  flex-basis: 50%;
+  display:flex;
+  flex-direction: column;
+  gap:1.5em;
+}
+.objet .options{
+  display:flex;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+.objet .options input{
+  margin-right: 10px;
+}
+.coordonnees li:not(:last-child){
+	margin-bottom: 10px;
+}
+.coordonnees li{
+  margin :20px ;
+	list-style: none;
+}
+.coordonnees li i{
+  color:white;
+  font-size: 1.4em;
+  margin-right: 20px;
+}
+.coordonnees li A{
+	font:500 20px 'Poppins';
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #fff;
+	display: inline;
+	transition: all 0.3s ease;
+}
+
+.coordonnees li a:hover{
+	color: #ffffff;
+	padding-left: 9px;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="submit"]{
+  font:400 18px 'Noto Sans';
+  color: black;
+  text-align: center;
+  background: white;
+  width:200px;
+  height:38px;
+  border: solid 1px #b9b9b9!important;
+  padding:6px 50px;
+  border-radius: 40px;
+  box-shadow: none;
+  transition: all 300ms ease-in;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  box-shadow: 3px 3px 0px 0px rgb(255, 166, 0);
+  margin-right: 2px;
+  -ms-transform: scale(1.0);
+}
+
+.FooterContainer{
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+  flex-wrap: wrap;
+	background-color: #26252f;
+  flex-direction: row;
+  padding: 50px 80px;
+}
+.FooterContainer UL{
+  list-style: none;
+}
+.Footer-col:last-of-type{
+  margin-left:40px;
+}
+.Footer-col{
+   width: 22%;
+   padding: 0 10px;
+}
+.Footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.Footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -7px;
+	background-color: #852eff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 10%;
+}
+.Footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.Footer-col ul li{
+  margin :20px 0 ;
+}
+.Footer-col ul li i{
+  color:white;
+  margin-right: 20px;
+}
+.Footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: inline;
+	transition: all 0.3s ease;
+}
+
+.Footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 6px;
+}
+.Footer-col .SocialMedia a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color:#26252f;
+	margin:0 20px 0 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.Footer-col .SocialMedia img{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}

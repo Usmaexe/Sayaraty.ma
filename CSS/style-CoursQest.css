@@ -1,0 +1,244 @@
+.Container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  gap:5em;
+  margin:150px auto; margin-bottom: 100px;
+}
+.animated{
+  width:40%;
+  height:500px;
+}
+.overlay1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup h3 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup label {
+  margin-left: 10px;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #000000;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+.Head{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Paragraph{
+  display:flex;
+  flex-direction: column;
+  gap:2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:60%;
+}
+.title{
+  position: relative;
+  font:900 40px 'Noto Sans';
+  color:#3D56AD;
+}
+.content{
+  padding:40px;
+  font:300 16px 'Noto Sans';
+  text-align: justify;
+  line-height: 25px;
+}
+.title::before{
+  content: '';
+  position: absolute;
+  left: 3px;
+  bottom: -7px;
+  height: 5px;
+  background-color: #ffb52e;
+  box-sizing: border-box;
+  width: 99%;
+}
+.UnderPg{
+  width: 80%;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Noto Sans';
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: solid 2px #c6c6c6;
+  box-shadow: 0px 0px 19px 0px rgb(0 0 0 / 20%);
+  border-radius: 21px;
+  padding: 10px 0px;
+}
+
+hr{
+  height:90%;
+  width:4px;
+  opacity:1;
+  border:none;
+  border-radius: 20px;
+  background: #8c8c8c;
+  box-shadow: none;
+
+}
+.first, .second{
+  width:200px;
+  display: flex;
+  gap:1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ftitle{
+  font:600 40px 'Montserrat';
+}
+.fcontent,.scontent{
+  font: 500 20px 'Noto Sans';
+    background-color: #ffb52e;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+    padding: 8px 18px
+}
+.scontent{
+  width:100px;
+}
+.Lesson{
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family:'Noto Sans';
+  justify-items: left;
+  border:solid 2px #cdcdcd;
+  border-radius: 10px;
+  padding:20px;
+}
+.Lesson img{
+  width:50px;
+}
+.chapter img{
+  width:34px;
+}
+.Lesson div{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;padding-bottom: 30px;
+  gap:30px;
+}
+.Ltitle{
+  color:#000000;
+  font:600 30px 'Noto Sans';
+  border-bottom: solid 2px #cdcdcd;
+  padding-left: 20px!important;
+  /* gap: 20px!important; */
+}
+.chapter{
+  padding-top:30px!important;
+  margin-left: 30px;
+}
+.lesson div{
+  width:100%;
+} 
+.av{
+  font:400 18px "Secular One";
+  width: 800px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+}
+.av LI a{
+  color:#000000;
+  letter-spacing: 1px;
+  position:relative;
+  display: block;
+  transition:all 300ms ease-in;
+}
+.av LI a:hover{
+  color:#7a7a7a;
+}
+.av LI a::after{
+  content:'';
+  position: absolute;
+  background-color:#febe10;
+  height:3px;
+  width:100%;
+  left:0;
+  bottom:-4px;
+  transform:scaleX(0);
+  transform-origin: center;
+  transition:all 400ms ease-in;
+}
+.av LI a:hover::after{
+  transform: scaleX(1);
+}
+.av Li a:hover:after,
+.av Li a:focus::after{
+  opacity: 1;
+}
