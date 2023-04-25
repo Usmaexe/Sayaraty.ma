@@ -1,7 +1,7 @@
 # Sayaraty.ma
-##########################################################
-Sayaraty Moroccan platform for managing a school driving.
-##########################################################
+
+Sayaraty Moroccan platform for managing a school driving
+
 
 We have developed a user-friendly platform called "Sayaraty" designed to simplify the management of a driving school. 
 This website offers various features that enable instructors and candidates to access their respective workspaces with ease.
